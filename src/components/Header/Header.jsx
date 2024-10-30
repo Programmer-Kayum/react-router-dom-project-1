@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import "./NavLink.css";
 const Header = () => {
   return (
     <div className="mb-20">
@@ -25,20 +25,20 @@ const Header = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu  menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to={"/"}>Home</Link>
+                <NavLink to={"/"}>Home</NavLink>
               </li>
 
               <li>
-                <Link to={"contact"}>Contact</Link>
+                <NavLink to={"contact"}>Contact</NavLink>
               </li>
               <li>
-                <Link to={"users"}>Users</Link>
+                <NavLink to={"users"}>Users</NavLink>
               </li>
               <li>
-                <Link to={"post"}>Post</Link>
+                <NavLink to={"post"}>Post</NavLink>
               </li>
             </ul>
           </div>
@@ -47,16 +47,16 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to={"/"}>Home</Link>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <Link to={"contact"}>Contact</Link>
+              <NavLink to={"contact"}>Contact</NavLink>
             </li>
             <li>
-              <Link to={"users"}>Users</Link>
+              <NavLink to={"users"}>Users</NavLink>
             </li>
             <li>
-              <Link to={"post"}>Post</Link>
+              <NavLink to={"post"}>Post</NavLink>
             </li>
           </ul>
         </div>
